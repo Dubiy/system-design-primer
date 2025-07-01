@@ -1,41 +1,43 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [العَرَبِيَّة‎](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [বাংলা](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Português do Brasil](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [Deutsch](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [ελληνικά](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [עברית](https://github.com/donnemartin/system-design-primer/issues/272) ∙ [Italiano](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [한국어](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [فارسی](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polski](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [русский язык](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Español](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [ภาษาไทย](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Türkçe](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [tiếng Việt](https://github.com/donnemartin/system-design-primer/issues/127) ∙ [Français](https://github.com/donnemartin/system-design-primer/issues/250) ∙ [Українська](README-uk.md) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-**Help [translate](TRANSLATIONS.md) this guide!**
+**Допоможіть з [перекладом](TRANSLATIONS.md) цього посібника!**
 
-# The System Design Primer
+# Основи системного проєктування
 
 <p align="center">
   <img src="images/jj3A5N8.png">
   <br/>
 </p>
 
-## Motivation
+## Мета посібника
 
-> Learn how to design large-scale systems.
+> Дізнатися, як проєктувати масштабовані системи.
 >
-> Prep for the system design interview.
+> Підготуйтеся до співбесіди з системного проектування.
 
-### Learn how to design large-scale systems
+### Навчіться як проектувати масштабовані системи
 
-Learning how to design scalable systems will help you become a better engineer.
+Вміння проєктувати масштабовані системи допоможе вам стати кращим інженером.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+Системне проєктування — це широка тема. Існує **величезна кількість ресурсів, доступних в інтернеті** щодо принципів системного проєктування.
 
-This repo is an **organized collection** of resources to help you learn how to build systems at scale.
+Цей репозиторій – **впорядкована добірка** ресурсів, що допоможуть вам опанувати проєктування масштабованих систем.
 
-### Learn from the open source community
+### Навчайтеся зі спільнотою відкритого коду
 
-This is a continually updated, open source project.
+Проєкт є відкритим і постійно оновлюється
 
-[Contributions](#contributing) are welcome!
+[Допомога](#contributing) завжди вітається!
 
-### Prep for the system design interview
+### Підготовка до співбесід з системного проєктування
 
-In addition to coding interviews, system design is a **required component** of the **technical interview process** at many tech companies.
+Крім завдань з написання коду, системне проєктування є **невідʼємною частиною технічної співбесіди** в більшості технологічних компаній.
 
-**Practice common system design interview questions** and **compare** your results with **sample solutions**: discussions, code, and diagrams.
+**Практикуйтеся на типових задваннях для співбесід з системного проєктування** і **порівнюйте** свої рішення зі **прикладами рішень**: обгововеннями, кодом і схемами.
 
-Additional topics for interview prep:
+Додаткові розділи для підготовки до співбесіди:
+
+<!-- TODO: Fix links and titles of topics -->
 
 * [Study guide](#study-guide)
 * [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question)
@@ -43,48 +45,48 @@ Additional topics for interview prep:
 * [Object-oriented design interview questions, **with solutions**](#object-oriented-design-interview-questions-with-solutions)
 * [Additional system design interview questions](#additional-system-design-interview-questions)
 
-## Anki flashcards
+## Anki-картки
 
 <p align="center">
   <img src="images/zdCAkB3.png">
   <br/>
 </p>
 
-The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repetition to help you retain key system design concepts.
+Надані [деки карток Anki](https://apps.ankiweb.net/) використовують методику інтервального повторення, щоб допомогти вам краще запамʼятати ключові концепції системного проєктування.
 
-* [System design deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
-* [System design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
-* [Object oriented design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
+* [Дека з системного проєктування](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
+* [Дека з вправами із системного проєктування](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
+* [Дека з вправами з обʼєктно-орієнтованого проєктування](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
 
-Great for use while on-the-go.
+Чудово підходить для навчання в дорозі.
 
-### Coding Resource: Interactive Coding Challenges
+### Матеріали з програмування: інтерактивні завдання
 
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
+Шукаєте матеріали для підготовки до [**співбесіди з програмування**](https://github.com/donnemartin/interactive-coding-challenges)?
 
 <p align="center">
   <img src="images/b4YtAEN.png">
   <br/>
 </p>
 
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
+Зверніть увагу на сусідній репозиторій [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), який містить додаткову деку карток Anki:
 
 * [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## Contributing
+## Співпрацюйте
 
-> Learn from the community.
+> Вчіться у спільноти.
 
-Feel free to submit pull requests to help:
+Не соромтеся надсилати pull request'и для допомоги з:
 
-* Fix errors
-* Improve sections
-* Add new sections
-* [Translate](https://github.com/donnemartin/system-design-primer/issues/28)
+* Виправлення помилок
+* Покращення розділів
+* Додавання нових розділів
+* [Переклад](https://github.com/donnemartin/system-design-primer/issues/28)
 
-Content that needs some polishing is placed [under development](#under-development).
+Матеріали, що потребують доопрацювання знаходяться [в розробці](#under-development).
 
-Review the [Contributing Guidelines](CONTRIBUTING.md).
+Ознайомтеся з [Інструкціями для учасників](CONTRIBUTING.md).
 
 ## Index of system design topics
 
